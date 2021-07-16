@@ -1,0 +1,103 @@
+.filter {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding-left: 20;
+}
+
+:host ::ng-deep {
+  .mat-form-feild-infix {
+    background-color: #3f51bd;
+  }
+
+  .mat-select-value,
+  .mat-select-arrow,
+  .mat-form-feild-hide-placeholder .mat-select-placeholder,
+  .mat-form-feild-appearance-legacy .mat-form-feild-label {
+    color: #fff !important;
+    opacity: 1;
+  }
+
+  .mat-form-feild-infix {
+    background-color: #fff !important;
+    border-top: none;
+    padding-left: 5px !important;
+  }
+
+  .mat-form-feild-appearance-legacy .mat-form-feild-label {
+    padding-left: 5px;
+  }
+
+  .mat-form-feild-appearance-legacy .mat-form-feild-underline {
+    background-color: #fff !important;
+  }
+}
+
+.games {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 5px auto;
+}
+
+.game {
+  width: 280px;
+  margin: 10px;
+  height: 330px;
+  overflow: hidden;
+  border-radius: 5px;
+  background-color: black;
+  box-shadow: 4px 2px 8px 0px rgb(204, 194, 171);
+  cursor: pointer;
+  transition-duration: 0.3s;
+
+  &:hover {
+    box-shadow: 4px 2px 11px 6px rgb(204, 194, 171);
+  }
+
+  &-thumb-container {
+    background-color: #000;
+    position: relative;
+    height: 172px;
+    color: white;
+    text-align: center;
+  }
+
+  &-thumbnail {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    height: 172px;
+  }
+
+  &-description {
+    display: flex;
+    padding: 2px;
+    height: 157px;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &-name {
+    color: #fff;
+    font-weight: 300;
+    font-size: 22x;
+    margin-bottom: 20px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin-left: 10px;
+  }
+
+  &-platforms {
+    display: flex;
+  }
+
+  &-platform {
+    width: 20px;
+    margin-right: 10px;
+    margin-left: 20px;
+  }
+}
